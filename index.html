@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+Brian Sutton Browser Guitar Effects v1.0
+-->
+<html>
+    <head>
+        <title>(-Online Guitar-)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Free online guitar effects. You can use your browser as a pedal board!">
+        <script type="text/javascript" src="audio.js"></script>
+        <link rel="stylesheet" type="text/css" href="audiocss.css">
+
+    </head>
+    <body>
+        <div class="navigator">
+            <input type="button" id="infoButton" name="infoButton" value="Info" class="button">
+            <input type="button" id="playButton" name="playButton" value="Play" class="button">
+            <input type="button" id="stopButton" name="stopButton" value="Stop" class="button">
+            <input type="button" id="guitarButton" name="guitarButton" value="Use Guitar" class="button">
+            <input type="button" id="sampleButton" name="sampleButton" value="Use Sample" class="button">
+            <input type="button" id="saveButton" name="saveButton" value="Save Levels" class="button">
+        </div>
+        <div id="info" class="info">
+
+        </div>
+        <table>
+
+            <tbody>
+                <tr>
+
+                    <td class="reverbPedal" id="reverbPedal">
+                        <div>
+
+                            <input type="image" class="reverbDial" id="reverbDial" name="reverbDial"  src = "VolumeDial.png" alt="knob" width="65" height="65" style="transform: rotateZ(20deg)">
+                            <div>
+                                <label for="reverbDial" >Level</label>
+                                
+                            </div>
+                        </div>
+                        <div> <input type="image" class="reverbLight" id="reverbLight" src = "offLight.png" alt="Delaylight"></div>
+                        <div> <input type="image" class="reverbButton" id="reverbButton" src = "DelayButton.png" alt="ReverbButton" width="88"></div>
+                    </td>
+
+                    <td class="delayPedal" id="delayData">
+
+                        <div>
+
+                            <input type="image" class="delayDials" id="delayDial1" name="delayDial1"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)"> 
+                            <input type="image" class="delayDials" id="delayDial2" name="delayDial2"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)"> 
+                            <input type="image" class="delayDials" id="delayDial3" name="delayDial3"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)">
+                            <div>
+                                <label for="delayDial1" style="color: darkgray">Time</label>
+                                <label for="delayDial2" style="color: darkgray">Decay</label>
+                                <label for="delayDial3" style="color: darkgray">Level</label>
+                            </div>
+                        </div>
+                        <div> <input type="image" class="delaylight" id="delayLight" src = "offLight.png" alt="Delaylight"></div>
+                        <div> <input type="image" class="delaybutton" id="delayButton" src = "DelayButton.png" alt="DelayButton"></div>
+
+
+
+                    </td>
+
+
+
+                    <td class="chorusPedal" id="chorusData">
+                        <div> 
+                            <input type="image" class="chorusDial" id="chorusDial1" name="chorusDial3"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)">
+                            <input type="image" class="chorusDial" id="chorusDial2" name="chorusDial3"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)">
+                            <input type="image" class="chorusDial" id="chorusDial3" name="chorusDial3"  src = "Dial.png" alt="knob" width="32" height="32" style="transform: rotateZ(20deg)">
+                        </div>
+                        <div>
+                            <label for="chorusDial1" style="color: green">Speed</label>
+                            <label for="chorusDial2" style="color: green">Rate</label>
+                            <label for="chorusDial3" style="color: green">Level</label>
+                        </div>
+                        <div>
+                            <input type="image" class="chorusLight" id="chorusLight" src = "offLight.png" alt="chorusLight"><br>
+                        </div>
+                        <div>
+                            <input type="image" class="chorusButton" id="chorusButton" src = "DelayButton.png" alt="chorusButton" width="120">
+                        </div>
+
+                    </td>
+                    <td class ="distortionPedal" id = distortionPedal>
+                        <div>
+                            <input type="image" class="distortionDial" id="distortionDial1" name="distortionDial1"  src = "Dial.png" alt="knob" width="46" height="46" style="transform: rotateZ(20deg)">
+                            <input type="image" class="distortionDial" id="distortionDial2" name="distortionDial2"  src = "Dial.png" alt="knob" width="46" height="46" style="transform: rotateZ(20deg)">
+                        </div>
+                        <div>
+                            <label for="distortionDial1" style="color: silver">\Drive/</label>
+                            <label for="distortionDial2" style="color: silver">\Level/</label>
+                        </div>
+                        <div>
+                            <input type="image" class="distortionLight" id="distortionLight" src = "offLight.png" alt="distortionLight"><br>
+                        </div>
+                        <div>
+                            <input type="image" class="distortionButton" id="distortionButton" src = "DelayButton.png" alt="distortionButton" width="150">
+                        </div>
+                    </td>
+
+                    <td class="compPedal" id="comPedal">
+                        <div>
+                            <input type="image" class="compDial" id="compDial1" name="compDial1"  src = "Dial.png" alt="knob" width="64" height="64" style="transform: rotateZ(20deg)">
+                            <input type="image" class="compDial" id="compDial2" name="compDial2"  src = "Dial.png" alt="knob" width="64" height="64" style="transform: rotateZ(20deg)">
+
+                        </div>
+                        <div>
+                            <label for="compDial1">Attack</label>
+                            <label for="compDial2">Threshold</label>
+                        </div>
+                        <div>
+                            <input type="image" class="compLight" id="compLight" src = "offLight.png" alt="compLight"><br>
+                        </div>
+                        <div>
+                            <input type="image" class="compButton" id="compButton" src = "DelayButton.png" alt="compButton" width="120">
+                        </div>
+
+                    </td>
+
+                    <td class="volumePedal" id="volumePedal" >
+
+                        <div>
+                            <input type="image" class="volumeDial" id="volumeDial" name="volumeDial"  src = "VolumeDial.png" alt="knob" width="75" height="75" style="transform: rotateZ(20deg)">
+
+                        </div>
+                        <div>
+                            <label for="volumeDial">Level</label>
+                        </div>
+                        <div>
+                            <input type="image" class="volumeLight" id="volumeLight" src = "offLight.png" alt="VolumeLight"><br>
+                        </div>
+                        <div>
+                            <input type="image" class="volumeButton" id="volumeButton" src = "DelayButton.png" alt="VolumeButton" width="88">
+                        </div>
+
+                    </td>
+
+
+                </tr>
+
+
+            </tbody>
+        </table>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>@copyright Brian Sutton</footer>
+    </body>
+</html>

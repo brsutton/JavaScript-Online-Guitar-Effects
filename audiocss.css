@@ -1,0 +1,187 @@
+body{
+    background-color: black;
+    /*background-image: url("guitar.jpg");*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+table{
+    margin-top: 5em;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+thead{
+    text-align: left;
+
+}
+
+td{
+}
+.delayDials{
+    z-index: 2;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+.delaylight{
+    margin-top: 10px;
+}
+.delaybutton{
+    margin-top: 90px;
+}
+
+.delayPedal{
+    z-index: 1;
+    background-image: url("DelayBack.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.chorusPedal{
+    z-index: 1;
+    background-image: url("chorus.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.chorusLight{
+    margin-top: 60px
+}
+.chorusButton{
+    margin-top: 50px;
+    padding: 4px;
+}
+.chorusDial{
+    z-index: 2;
+    position: relative;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 50%;
+}
+.distortionDial{
+    z-index: 2;
+    position: relative;
+    margin-top: 2px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 2px;   
+    border-radius: 50%;
+}
+.distortionLight{
+    margin-bottom: 10px;
+
+}
+.distortionButton{
+    margin-top: 80px;
+    padding: 5px;
+
+}
+.distortionPedal{
+    background-image: url("Distortion.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.compPedal{
+    background-image: url("comp.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.compDial{
+    z-index: 2;
+    position: relative;
+
+    padding: 5px;
+    border-radius: 50%;
+
+}
+.compLight{
+    margin-top: 65px;
+}
+.compButton{
+    margin-top: 15px;
+}
+.volumePedal{
+    background-image: url("volume.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.volumeDial{
+
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+.volumeLight{
+    margin-top: 30px;
+}
+.volumeButton{
+    margin-top: 25px;
+    padding: 12px;
+}
+
+.reverbPedal{
+    background-image: url("reverb.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.reverbDial{
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.reverbButton{
+    margin-top: 20px;
+    padding: 15px;
+}
+.reverbLight{
+    margin-top: 30px;
+}
+
+input[type="image"]{
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+html{
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+label{
+    font-family: cursive, fantasy, sans-serif, serif;
+    padding: 5px;
+
+}
+.navigator{
+    background-color: black;
+    height: 10px;
+}
+.button{
+    color: white;
+    background-color: black;
+    border-color: black;
+    outline: none;
+}
+.button:hover{
+    background-color: gray;
+}
+.button:active{
+    background-color: darkblue;
+}
+.info{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
