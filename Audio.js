@@ -929,19 +929,7 @@ var knobMove = function (e) {
 
 };
 
-var infoClicked = function () {
-    if ($("info").innerHTML === "") {
-        $("infoButton").value = "Hide Info";
-        $("info").innerHTML = "<p>This website is intended to be an online guitar effects processor.\n\
-To use this site, connect a guitar to your computer and select Use Guitar. There is also the \n\
-Use Sample option. This allows you to experiment with the different effects using a prerecorded sample.\n\
-I recommend using a Mac with an audio interface while using the Chrome browser for best performance.</p>";
-    } else {
-        $("infoButton").value = "Info";
-        $("info").innerHTML = "";
-    }
 
-};
 
 window.onload = function () {
     try {
@@ -1001,9 +989,6 @@ window.onload = function () {
         $("volumeDial").onmouseout = leaveFocus;
 
         $("saveButton").onclick = saveLevels;
-
-        $("infoButton").onclick = infoClicked;
-        $("info").innerHTML = "";
 
         setUpLevals();
 
